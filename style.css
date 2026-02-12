@@ -1,0 +1,103 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+}
+
+header a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* ===== Sections ===== */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* ===== Mobile Layout (Default for 412px) ===== */
+.sidebar,
+.main-content {
+    width: 100%;
+}
+
+/* ===== Desktop Layout (1920px) ===== */
+@media (min-width: 1024px) {
+
+    .container {
+        display: flex;
+        max-width: 1300px;
+        background: white;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    header {
+        width: 100%;
+        padding: 25px 0;
+        background: white;
+    }
+
+    .sidebar {
+        width: 30%;
+        background: #1e293b;
+        color: white;
+        padding: 30px;
+    }
+
+    .sidebar h2 {
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .main-content {
+        width: 70%;
+        padding: 40px;
+    }
+
+    h2 {
+        border-bottom: 2px solid #1e293b;
+    }
+}
